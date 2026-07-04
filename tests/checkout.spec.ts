@@ -5,6 +5,7 @@ test("checkout info, order review, and completion", async ({ page }) => {
   await page.locator("#user-name").fill("standard_user");
   await page.locator("#password").fill("secret_sauce");
   await page.locator("#login-button").click();
+  await page.waitForURL(/\/inventory\.html$/);
 
   await page.evaluate(() => {
     window.localStorage.setItem("cart-contents", JSON.stringify([4]));
