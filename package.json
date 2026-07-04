@@ -1,0 +1,11 @@
+{
+  "name": "playwright-base",
+  "version": "1.0.0",
+  "description": "Base E2E repo with Playwright pre-configured, shared by parallel cloud agents.",
+  "scripts": {
+    "test:e2e": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.48.0"
+  }
+}
